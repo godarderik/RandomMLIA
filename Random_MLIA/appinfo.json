@@ -1,0 +1,19 @@
+{
+	"id": "com.erikgodard.randommlia",
+	"version": "1.2.0",
+	"vendor": "Erik Godard",
+	"type": "web",
+	"main": "index.html",
+	"title": "Random MLIA",
+	"icon": "icon.png",
+	"smallicon": "smallicon.png",
+    "copyright": "&copy; Copyright 2010 Erik Godard.",
+	"support": {
+        "url": "http://sites.google.com/site/erikgodardapps/",
+        "email": {
+            "address": "erikgodardapps@gmail.com",
+            "subject": "MLIA Support"
+        }
+    }
+}
+

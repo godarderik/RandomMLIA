@@ -1,0 +1,11 @@
+#spinner {
+   position:absolute;
+   left: 100px;
+   top: 50px;
+    z-index:100;
+   
+}
+#mojo-scene-main-scene-scroller {
+    background-image: url("../images/back.png");
+    background-repeat: repeat;   
+}
