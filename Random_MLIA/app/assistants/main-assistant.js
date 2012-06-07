@@ -76,8 +76,8 @@ MainAssistant.prototype.getRandom = function (upper) {
 MainAssistant.prototype.newStory = function (upper) {
 this.model.spinning = true;
 this.controller.modelChanged(this.model);
-storyNum = this.getRandom(1527989);
-//storyNum = 1;
+storyNum = this.getRandom(2527989);
+//storyNum = 115;
 var url = "http://mylifeisaverage.com/story/" + storyNum;
 var request = new Ajax.Request(url, {method: 'get', onSuccess: this.success.bind(this), onFailure: this.failure.bind(this)});
 }
@@ -88,11 +88,12 @@ this.controller.modelChanged(this.model);
 Mojo.Log.error("reached 2");
 Mojo.Log.error(response.responseText);
 text = response.responseText;
-a = text.indexOf('<META NAME="description" CONTENT="     ');
-b = text.indexOf('/><meta name="google-site-verification"');
+a = text.indexOf('<META NAME=\"description" CONTENT=\"') + '<META NAME=\"description" CONTENT=\"'.length;
+b = text.indexOf('/><meta name=\"google-site-verification\"');
 Mojo.Log.error(a);
 Mojo.Log.error(b);
 text = text.substring(a,b);
+Mojo.Log.error(text)
 this.controller.get("test").innerHTML = text;
 
 }
